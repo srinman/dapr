@@ -1,12 +1,22 @@
-# DAPR
+# Distributed Application Runtime
+![](/data/home-title.png)
 
 In one simple sentence, 'DAPR simplifies developer life!'
 
 Make DAPR your friend and say goodbye to the hassle of using different libraries for different resources - it's the one-stop solution for a streamlined development experience!
 
+Following are some of the attributes of dapr!  
+**Consistency**  
+**Speed**  
+
+Applies to  
+**Brown field**  (or)
+**Green field**  
+
+
 ## Outcome
 
-The example demonstrates how DAPR provides an abstraction layer for the backend state store, allowing applications to be written without relying on Redis libraries.    
+The example demonstrates how DAPR provides an abstraction layer, **State Management**, for the backend state store, allowing applications to be written without relying on Redis libraries.    
 
 ## Method
 
@@ -62,6 +72,9 @@ auth:
 ```
 
 At this time, we have deployed Redis locally in the cluster, configured Dapr Component to communciate with Redis with the secret stored in K8S secret.   
+
+
+`dapr components -k`
 
 ## Use our app to write data into Redis (indirectly via Dapr)
 Lets write some data into Redis from our app pod via Dapr
